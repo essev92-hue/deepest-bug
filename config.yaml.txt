@@ -1,0 +1,23 @@
+# config.yaml - Konfigurasi utama
+scanning:
+  threads: 30
+  rate_limit: 100
+  timeout: 10
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  delay: 100
+
+tools:
+  httpx:
+    ports: "80,443,8080,8443,3000,8000,8888"
+    threads: 50
+    timeout: 5
+    
+  nuclei:
+    severity: "medium,high,critical"
+    exclude_tags: "intrusive,dos,brute,slow"
+    rate_limit: 50
+    
+  dalfox:
+    blind: "https://your-blind.xss.ht"
+    skip_bav: true
+    mining_dict: true
