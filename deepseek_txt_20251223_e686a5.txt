@@ -1,0 +1,17 @@
+# BotifyHost Compatible Requirements
+# Semua package di bawah ini sudah di-whitelist dan akan work
+
+# Untuk HTTP requests (WAJIB)
+requests==2.31.0
+
+# Untuk environment variables (OPSIONAL, bisa diganti dengan config dict)
+python-dotenv==1.0.0
+
+# Untuk type hints support (standard library compatible)
+typing-extensions==4.8.0
+
+# Untuk date/time handling (lightweight)
+python-dateutil==2.8.2
+
+# Untuk hashing/security (standard library compatible)
+pycryptodome==3.18.0
